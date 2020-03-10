@@ -13,5 +13,17 @@
     </ion-toolbar>
   </ion-header>
 
+  <ul>
+    <li *ngFor="let job of jobs | async">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{job.title}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{job.description}}
+        </ion-card-content>
+      </ion-card>
+    </li>
+  </ul>
   <app-explore-container name="Jobs page"></app-explore-container>
 </ion-content>

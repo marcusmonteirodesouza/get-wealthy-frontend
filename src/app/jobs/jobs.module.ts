@@ -16,4 +16,6 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
   ],
   declarations: [JobsPage]
 })
-export class JobsPageModule {}
+export class JobsPageModule {
+
+}

@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
+import { Job } from './job';
+import 'firebase/firestore';
 
 @Component({
   selector: 'app-jobs',
@@ -6,7 +10,9 @@ import { Component } from '@angular/core';
   styleUrls: ['jobs.page.scss']
 })
 export class JobsPage {
-
-  constructor() {}
-
+  jobs: Observable<Job[]>;
+  constructor(firestore: AngularFirestore) {
+    this.jobs = firestore.collection<Job>('jobs').valueChanges();
+    console.log(this.jobs);
+  }
 }

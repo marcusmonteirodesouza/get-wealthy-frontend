@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "get-wealthy-b869b": {
+      "hosting": {
+        "app": [
+          "get-wealthy-b869b"
+        ]
+      }
+    }
+  }
+}
