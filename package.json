@@ -1,8 +1,8 @@
 {
   "name": "get-wealthy",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Marcus Vinicius Monteiro de Souza",
+  "homepage": "",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
